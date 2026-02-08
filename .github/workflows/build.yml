@@ -20,7 +20,8 @@ jobs:
           node-version: '12.18.2'
       - run: sudo apt update
       - run: sudo apt install libegl1 libopengl0 libxcb-cursor-dev
-      - run: sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
+      - run: sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin || true
+      - run: sudo npm install -g npm@6.14.15
       - run: sudo npm install -g gitbook-cli
       - run: gitbook install .
       - run: mkdir output
