@@ -22,12 +22,12 @@ jobs:
       - run: sudo apt install libegl1 libopengl0 libxcb-cursor-dev
       - run: sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin || true
       - run: sudo npm install -g npm@6.14.15
-      - run: sudo npm install -g gitbook-cli
-      - run: gitbook install .
+      - run: sudo npm install -g honkit
+      - run: honkit install
       - run: mkdir output
-      - run: gitbook pdf . ./output/typescript-book-${SHA}.pdf
-      - run: gitbook epub . ./output/typescript-book-${SHA}.epub
-      - run: gitbook mobi . ./output/typescript-book-${SHA}.mobi
+      - run: honkit pdf . ./output/typescript-book-${SHA}.pdf
+      - run: honkit epub . ./output/typescript-book-${SHA}.epub
+      - run: honkit mobi . ./output/typescript-book-${SHA}.mobi
       - name: upload pdf artifact
         uses: actions/upload-artifact@v4
         with:
