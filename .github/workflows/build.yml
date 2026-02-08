@@ -21,7 +21,6 @@ jobs:
       - run: sudo apt update
       - run: sudo apt install libegl1 libopengl0 libxcb-cursor-dev
       - run: sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin || true
-      - run: sudo npm install -g honkit
       - run: npm install honkit
       - run: npx honkit install
       - run: mkdir output
