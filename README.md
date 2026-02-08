@@ -39,7 +39,7 @@ Learn Professional TypeScript. I've been looking at the issues that turn up comm
 If you are here to read the book online [get started](https://basarat.gitbook.io/typescript/getting-started).
 
 ## Translations 
-Book is completely free so you can copy paste whatever you want without requiring permission. If you have a translation you want me to link here. [Send a PR](https://github.com/basarat/typescript-book/edit/master/README.md).
+Book is completely free so you can copy and paste whatever you want without requiring permission. If you have a translation you want me to link here. [Send a PR](https://github.com/basarat/typescript-book/edit/master/README.md).
 * [Filipino](https://github.com/themarshann/typescript-book-fil)
 * [Italian](https://github.com/TizioFittizio/typescript-book)
 * [Chinese](https://github.com/jkchao/typescript-book-chinese)
