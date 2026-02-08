@@ -21,9 +21,9 @@ jobs:
       - run: sudo apt update
       - run: sudo apt install libegl1 libopengl0 libxcb-cursor-dev
       - run: sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin || true
-      - run: sudo npm install -g npm@6.14.15
       - run: sudo npm install -g honkit
       - run: honkit install
+      - run: mkdir output
       - run: mkdir output
       - run: honkit pdf . ./output/typescript-book-${SHA}.pdf
       - run: honkit epub . ./output/typescript-book-${SHA}.epub
