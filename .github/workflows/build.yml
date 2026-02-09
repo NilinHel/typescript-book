@@ -18,7 +18,7 @@ jobs:
       
       - uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '10'
       
       - name: Install Calibre
         run: |
@@ -27,9 +27,7 @@ jobs:
           sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin || true
       
       - name: Install GitBook CLI
-        run: |
-          npm cache clean --force
-          sudo npm install -g gitbook-cli
+        run: sudo npm install -g gitbook-cli
       
       - name: Install GitBook plugins
         run: gitbook install
