@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     env:
       SHA: ${{ github.sha }}
     steps:
@@ -18,7 +18,7 @@ jobs:
       
       - uses: actions/setup-node@v3
         with:
-          node-version: '10.24.1'
+          node-version: '12.22.12'
       
       - name: Install Calibre
         run: |
